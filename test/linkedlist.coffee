@@ -35,7 +35,7 @@ describe 'Linked List', () ->
                     nextNode: 
                         data: 'End User'
                         nextNode: null
-
+                  
 	describe '#size()', () ->
 
 		it "LinkedList#size() to be 3", () ->
@@ -73,7 +73,7 @@ describe 'Linked List', () ->
 			expect(list.seek 3).to.deep.equal
                 data: 'End User'
                 nextNode: null
-
+ 
 	describe '#empty()', () ->
 
 		it "LinkedList#empty() should remove all of the items", () ->
@@ -107,7 +107,7 @@ describe 'Linked List', () ->
 		it "LinkedList#remove(1) should empty the LinkedList", () ->
 			list.insert 'Primary User'
 			list.remove 1
-			expect(list.seek()).to.null;
+			expect(list.seek()).to.be.null;
 
 		it "LinkedList#remove(2) should remove the last element", () ->
 			list.insert 'Primary User'

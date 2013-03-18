@@ -13,7 +13,7 @@ module.exports = function (options) {
 	}, options || {});
 
 	site.configure(function() {
-		site.use('/LinkedList.js', staticDir(options.baseDir + 'src/LinkedList.js'));
+		site.use('/LinkedList.coffee', staticDir(options.baseDir + 'src/LinkedList.coffee'));
 		site.use('/test', staticDir(options.baseDir + 'test'));
 		site.use(express.bodyParser());
 	});
@@ -22,8 +22,8 @@ module.exports = function (options) {
 	site.get("/", function (req, res) {
 		fs.createReadStream(options.baseDir + 'test/runner.html').pipe(res);
 	});
-	site.get("/LinkedList.js", function (req, res) {
-		fs.createReadStream(options.baseDir + 'src/LinkedList.js').pipe(res);
+	site.get("/LinkedList.coffee", function (req, res) {
+		fs.createReadStream(options.baseDir + 'src/LinkedList.coffee').pipe(res);
 	})
 	site.listen(options.port);
 	console.log("\n\nServing at http://localhost:" + options.port + ". (Ctrl+C to exit)");

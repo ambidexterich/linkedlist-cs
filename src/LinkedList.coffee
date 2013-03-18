@@ -7,7 +7,7 @@ isEmpty = (valToCheck) ->
     true if not valToCheck?
 
 class ListNode
-    constructor: (@data, @nextNode) ->
+    constructor: (@data, @nextNode=null) ->
 
 class LinkedList
     constructor: ->
@@ -51,7 +51,7 @@ class LinkedList
 
             if position == 1 then headNode = nextNode else
                 previousNode = @seek position - 1
-                previouseNode.nextNode = nextNode
+                previousNode.nextNode = nextNode
 
             listSize--
             true

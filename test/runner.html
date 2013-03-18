@@ -11,7 +11,8 @@
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<link rel="stylesheet" href="/test/lib/mocha.css" />
-		<script src="../LinkedList.js"></script>
+        <script src="/test/lib/coffee-script.js"></script>
+		<script src="/LinkedList.coffee" type="text/coffeescript"></script>
 
 	</head>
 
@@ -26,7 +27,7 @@
 			window.expect = chai.expect;
 			mocha.setup('bdd');
 		</script>
-		<script src="/test/linkedlist.js"></script>
+		<script src="/test/linkedlist.coffee" type="text/coffeescript"></script>
 		<script>
 			mocha.run();
 		</script>
