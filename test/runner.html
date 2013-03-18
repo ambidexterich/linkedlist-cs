@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+	<head>
+
+		<meta charset="utf-8">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>LinkedList Test Runner</title>
+
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="/test/lib/mocha.css" />
+		<script src="../LinkedList.js"></script>
+
+	</head>
+
+	<body>
+
+		<div id="mocha" role="main">
+
+		</div>
+		<script src="/test/lib/chai.js"></script>
+		<script src="/test/lib/mocha.js"></script>
+		<script>
+			window.expect = chai.expect;
+			mocha.setup('bdd');
+		</script>
+		<script src="/test/linkedlist.js"></script>
+		<script>
+			mocha.run();
+		</script>
+	</body>
+</html>

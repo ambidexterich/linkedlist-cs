@@ -1,19 +1,23 @@
 {
-  "name" : "linked-list",
-  "version" : "0.0.1",
-  "description" : "A port of my JS LinkedList to coffeescript",
-  "directories" : {
-    "test" : "test"
-  },
-  "engine" : "node 0.8.18"
-  "scripts" : {
-    "test" : "./node_modules/mocha/bin/mocha -R spec test/runner.coffee"
-    "start" : "node bin/test"
-  },
-  "repository" : {
-    "type" : "git",
-    "url" : "git://github.com/ambidexterich/linkedlist-cs.git"
-  },
-  "readmeFilename" : "README.md",
-  "private" : true
+	"name" : "linked-list",
+	"version" : "1.0.0",
+	"descript" : "A port of my JS linkedlist to coffeescript",
+	"devDependencies" : {
+		"chai"			: "1.5.x",
+		"express"		: "3.x",
+		"mocha"			: "1.8.x",
+		"open"			: "0.0.3",
+		"underscore"	: "1.4.x",
+		"coffee-script" : "1.6.x"
+	},
+	"scripts" : {
+		"test"	: "./node_modules/mocha/bin/mocha",
+		"start"	: "node bin/test"
+	},
+	"bin" : "bin/test",
+	"repository" : {
+	    "type" : "git",
+		"url" : "git://github.com/ambidexterich/linkedlist-cs.git"
+	},
+	"private" : "true"
 }
